@@ -1,0 +1,38 @@
+.project.section-sub{
+    max-width: 70ch;
+    margin: 0 0 2em 0;
+
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2em;
+    max-width: 1100px;
+
+}
+
+.project-card{
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(92, 2, 75, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 75em;
+    border: 1px solid rgba(92, 2, 75, 0.1);
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(92, 2, 75, 0.2);
+}
+.project-card h3{
+    margin-top: auto;
+    color: #5c024b;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.project-card .go:focus-visible{
+    text-decoration-thickness: 2px;
+}
